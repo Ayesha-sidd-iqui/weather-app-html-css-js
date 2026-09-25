@@ -22,6 +22,7 @@ document.getElementById("date").textContent =
 
 
 
+
 const input = document.querySelector("#search-input");
 const button = document.querySelector("#search-btn");
 
