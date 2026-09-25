@@ -1,0 +1,230 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+
+
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+
+
+
+.weather-box {
+  padding: 30px;
+
+  border-radius: 30px;
+
+  background: rgba(48, 37, 91, 0.55);
+
+  border: 1px solid rgba(208, 171, 248, 0.4);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 20px 50px rgba(31, 20, 70, 0.5);
+}
+
+
+
+
+.search-box {
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  border-radius: 30px;
+
+  padding: 0 8px 0 15px;
+}
+
+.search-box > i {
+  color: #7357a8;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  padding: 0 12px;
+
+  font-size: 16px;
+
+  color: #30255b;
+}
+
+.search-box input::placeholder {
+  color: #777;
+}
+
+.search-box button {
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #76529b;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+
+
+.city-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  color: #f7eaff;
+  font-size: 17px;
+}
+
+.city-name i {
+  color: #ffb6a3;
+  margin-top: -7px;
+}
+
+
+
+.weather {
+  text-align: center;
+
+  margin-top: 25px;
+}
+
+.weather img {
+  width: 180px;
+  height: 180px;
+
+  object-fit: contain;
+}
+
+.weather h1{
+  font-size: 70px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  color: #ffffff;
+}
+
+.weather h2 {
+  margin-top: 12px;
+
+  font-size: 24px;
+  font-weight: 400;
+
+  color: #ffe0d7;
+}
+
+.weather p {
+  margin-top: 8px;
+
+  font-size: 15px;
+
+  color: #9a6cee;
+}
+
+
+/* Weather Details */
+
+.weather-details {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+
+  margin-top: 35px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 15px 10px;
+
+  border-radius: 18px;
+
+  background: rgba(136, 106, 184, 0.35);
+
+  border: 1px solid rgba(255, 210, 230, 0.2);
+}
+
+.detail > i {
+  font-size: 20px;
+
+  color: #fcad98;
+}
+
+.detail div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.detail span {
+  font-size: 11px;
+
+  color: #dcd0ed;
+}
+
+.detail strong {
+  font-size: 14px;
+
+  color: #ffffff;
+}
+
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 25px;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 220, 240, 0.25);
+
+  font-size: 13px;
+
+  color: #ddd0ed;
+}

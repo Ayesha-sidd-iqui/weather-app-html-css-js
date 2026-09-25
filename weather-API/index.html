@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weather App</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="weather-box">
+
+      <!-- Search -->
+      <div class="search-box">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <input id="search-input" type="text" placeholder="Search city">
+
+        <button id="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+      </div>
+
+
+      <!-- City -->
+      <div class="city-name">
+
+        <i class="fa-solid fa-location-dot"></i>
+
+        <span id="city"></span>
+
+      </div>
+
+
+<div class="weather">
+
+  <img id="weather-img" src="summ.jpg" alt="Weather">
+
+  <h1 id="temperature"></h1>
+
+  <h2 id="condition"></h2>
+
+  <p id="feels"></p>
+
+</div>
+
+
+      <!-- Weather Details -->
+      <div class="weather-details">
+
+        <div class="detail">
+
+          <i class="fa-solid fa-temperature-half"></i>
+
+          <div>
+            <span>Feels Like</span>
+            <strong id="feels-temp"></strong>
+          </div>
+
+        </div>
+
+
+        <div class="detail">
+
+          <i class="fa-solid fa-droplet"></i>
+
+          <div>
+            <span>Humidity</span>
+            <strong id="humidity"></strong>
+          </div>
+
+        </div>
+
+
+        <div class="detail">
+
+          <i class="fa-solid fa-wind"></i>
+
+          <div>
+            <span>Wind</span>
+            <strong id="wind"></strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Date and Time -->
+      <div class="footer">
+
+        <span id="date"></span>
+
+        <span id="time"></span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
